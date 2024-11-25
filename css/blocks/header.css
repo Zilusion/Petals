@@ -1,0 +1,138 @@
+.header {
+	padding: 20px 0;
+	position: sticky;
+	top: 0;
+	margin: 0 -1px;
+	background-color: #ffffff;
+	width: calc(100% + 2px);
+	height: 82px;
+	z-index: 10;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__title {
+	font-weight: bold;
+	font-size: 32px;
+	color: #000000;
+}
+
+.header__nav {
+	margin-left: auto;
+	transition: all 0.3s ease-in-out;
+}
+
+.header__nav-list {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header__nav-link {
+	font-weight: normal;
+	font-size: 16px;
+	color: #000000;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	border-bottom: 1px solid transparent;
+}
+
+.header__nav-item:hover .header__nav-link {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.header__nav-item:active {
+	scale: 0.9;
+}
+
+.header__nav-button {
+	display: none;
+	margin-left: 15px;
+}
+
+.header__nav-button-icon {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	overflow: hidden;
+}
+
+.header__nav-button-line {
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #000000;
+	transform-origin: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.header__nav-button.active .header__nav-button-line:nth-child(1) {
+	rotate: 45deg;
+	translate: 0 8px;
+}
+
+.header__nav-button.active .header__nav-button-line:nth-child(2) {
+	scale: 0;
+	translate: 30px 0;
+}
+
+.header__nav-button.active .header__nav-button-line:nth-child(3) {
+	rotate: -45deg;
+	translate: 0 -8px;
+}
+
+.header__cart-button {
+	width: 35px;
+	margin-left: 20px;
+}
+
+.header__nav.active {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: calc(100vh - 81px);
+	background-color: white;
+	top: 81px;
+	left: 0;
+	z-index: 5;
+	animation: show 0.3s ease-in-out;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.header__nav.active .header__nav-list {
+	padding-top: 10vh;
+	gap: 20px;
+	display: grid;
+	place-items: center;
+}
+
+.header__nav.active .header__nav-link {
+	font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+	.header__nav {
+		display: none;
+	}
+	.header__nav-button {
+		display: block;
+	}
+
+	.header__cart-button {
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,48 @@
+html {
+	font-family: 'Kufam', sans-serif;
+	background-color: #ffffff;
+	scroll-behavior: smooth;
+	scroll-padding: 60px;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body.no-scroll {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 70px;
+	width: 100%;
+}
+
+.container-wide {
+	padding: 0 10px;
+}
+
+.container-full {
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		margin: 0 auto;
+		padding: 0 30px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.container {
+		margin: 0 auto;
+		padding: 0 10px;
+		width: 100%;
+	}
+}

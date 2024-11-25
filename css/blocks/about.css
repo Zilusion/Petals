@@ -1,0 +1,40 @@
+.about {
+	height: 450px;
+	background: black url(./../../assets/images/background-1.png) right bottom/cover no-repeat;
+	padding: 70px 0;
+}
+
+.about__container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.about__content {
+	width: 150px;
+	color: white;
+}
+
+.about__title {
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+.about__description {
+	font-size: 17px;
+}
+
+@media screen and (max-width: 480px) {
+	.about__container {
+		justify-content: center;
+	}
+
+	.about {
+		height: 380px;
+		background: black url(./../../assets/images/background-1.png) center bottom/contain no-repeat;
+	}
+
+	.about__content {
+		width: 100%;
+	}
+}

@@ -1,0 +1,88 @@
+.contacts {
+	background: white;
+	padding: 60px 0;
+}
+
+.contacts__title {
+	font-size: 32px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.contacts__cards {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	font-family: 'Montserrat';
+	margin-bottom: 50px;
+}
+
+.contacts__card {
+	position: relative;
+	padding: 20px;
+	border-radius: 15px;
+	width: 192px;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contacts__card:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.contacts__card:hover .contacts__card-link {
+    color: #e24e4e;
+	text-decoration: underline;
+}
+
+.contacts__card:active {
+    transform: scale(0.9);
+}
+
+.contacts__card::before {
+	top: 50%;
+	left: -33px;
+	translate: 0 -50%;
+	position: absolute;
+	content: '';
+	background: center/cover no-repeat;
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+
+.contacts__card:nth-child(1)::before {
+	background-image: url(./../../assets/images/icons/phone.svg);
+}
+
+.contacts__card:nth-child(2)::before {
+	background-image: url(./../../assets/images/icons/mail.svg);
+}
+
+.contacts__card:nth-child(3)::before {
+	background-image: url(./../../assets/images/icons/telegram.svg);
+}
+
+.contacts__card:nth-child(4)::before {
+	background-image: url(./../../assets/images/icons/instagram.svg);
+}
+
+.contacts__card-link {
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+
+.contacts__map {
+	border: 0;
+	width: 100%;
+}

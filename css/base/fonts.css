@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Regular'), local('Montserrat-Regular'), url('./../../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Medium'), local('Montserrat-Medium'), url('./../../assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Bold'), local('Montserrat-Bold'), url('./../../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kufam';
+	src: local('Kufam Regular'), local('Kufam-Regular'), url('./../../assets/fonts/Kufam/Kufam-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kufam';
+	src: local('Kufam Medium'), local('Kufam-Medium'), url('./../../assets/fonts/Kufam/Kufam-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kufam';
+	src: local('Kufam Bold'), local('Kufam-Bold'), url('./../../assets/fonts/Kufam/Kufam-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

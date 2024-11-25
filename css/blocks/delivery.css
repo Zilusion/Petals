@@ -1,0 +1,37 @@
+.delivery {
+	min-height: 500px;
+	background: rgba(0, 0, 0, 0.99) url(./../../assets/images/background-2.png) center/cover no-repeat;
+	padding: 70px 0;
+}
+
+.delivery__title {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 100px;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+.delivery__options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	place-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+}
+
+.delivery__option {
+	text-align: center;
+	font-size: 18px;
+}
+
+.delivery__option-title {
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.delivery__options {
+		grid-template-columns: 1fr;
+	}
+}

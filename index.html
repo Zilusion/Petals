@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="DS2024.1">
+    <title>Petals</title>
+
+    <link rel="stylesheet" href="css/base/fonts.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/base.css">
+
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/about.css">
+    <link rel="stylesheet" href="css/blocks/catalog.css">
+    <link rel="stylesheet" href="css/blocks/delivery.css">
+    <link rel="stylesheet" href="css/blocks/contacts.css">
+    <link rel="stylesheet" href="css/blocks/feedback.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-wide header__container">
+            <h1 class="header__title">Petals</h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link">О нас</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#catalog" class="header__nav-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#delivery" class="header__nav-link">Доставка</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__cart-button">
+                <img src="./assets/images/icons/cart.svg" alt="Корзина">
+            </button>
+            <button class="header__nav-button">
+                <span class="header__nav-button-icon">
+                    <span class="header__nav-button-line"></span>
+                    <span class="header__nav-button-line"></span>
+                    <span class="header__nav-button-line"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about" id="about">
+            <div class="container about__container">
+                <div class="about__content">
+                    <h2 class="about__title">petals</h2>
+                    <h2 class="about__description">Цветочный, где каждый букет - это произведение искусства</h2>
+                </div>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="container catalog__container">
+                <h2 class="catalog__title">Каталог</h2>
+                <div class="catalog__list">
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers1.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #1</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers2.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #2</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers3.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #3</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers4.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #4</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers5.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #5</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers6.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #6</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers7.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #7</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers8.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #8</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                    <div class="catalog__item">
+                        <img src="./assets/images/flowers9.png" alt="Букет" class="catalog__item-image">
+                        <h3 class="catalog__item-title">Hot offer #9</h3>
+                        <button type="button" class="catalog__item-button">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery" id="delivery">
+            <div class="container delivery__container">
+                <h2 class="delivery__title">Доставка по москве</h2>
+                <div class="delivery__options">
+                    <div class="delivery__option">
+                        <h3 class="delivery__option-title">Самовывоз</h3>
+                        <p class="delivery__option-description">Мы находимся в центре города, метро Парк Культуры.
+                            Ждем вас в гости!</p>
+                    </div>
+                    <div class="delivery__option">
+                        <h3 class="delivery__option-title">Доставка по Москве</h3>
+                        <p class="delivery__option-description">Доставка в пределах МКАД <span
+                                class="delivery__option-price">450 руб</span>.</p>
+                        <p class="delivery__option-description">Доставка за пределы МКАД до 10 км <span
+                                class="delivery__option-price">690 руб</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts__title">Контакты</h2>
+                <div class="contacts__cards">
+                    <a href="tel:+79199521488" class="contacts__card">+7 (919) 952-14-88</a>
+                    <a href="mailto:info@example.com" class="contacts__card">petals@gmail.com</a>
+                    <a href="https://t.me/Petals" target="_blank" class="contacts__card">@Petals</a>
+                    <a href="https://www.instagram.com/Petals" target="_blank" class="contacts__card">@Petals</a>
+                </div>
+            </div>
+            <div class="container container-full">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166.94969798250708!2d37.599776141559495!3d55.73768099286697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ba8f0d33961%3A0xe856fbf4e03136ab!2z0J7RgdGC0L7QttC10L3QutCwINCf0LDRgNC6INCf0LDQu9Cw0YE!5e0!3m2!1sru!2sru!4v1732528021899!5m2!1sru!2sru"
+                    height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="contacts__map"></iframe>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container feedback__container">
+                <h2 class="feedback__title">Оставьте отзыв</h2>
+                <form action="#" method="post" class="feedback__form">
+                    <div class="feedback__item">
+                        <label for="user-name" class="feedback__label">Ваше имя</label>
+                        <input type="text" id="user-name" name="user-name" class="feedback__input"
+                            placeholder="Иванов Иван">
+                    </div>
+                    <div class="feedback__item">
+                        <label for="user-email" class="feedback__label">Ваш email</label>
+                        <input type="email" id="user-email" name="user-email" class="feedback__input"
+                            placeholder="ivan1234@gmail.com">
+                    </div>
+                    <div class="feedback__item">
+                        <label for="user-message" class="feedback__label">Ваш отзыв</label>
+                        <textarea id="user-message" name="user-message" class="feedback__textarea" rows="1"
+                            placeholder="Лучший букет"></textarea>
+                    </div>
+                    <div class="feedback__buttons">
+                        <button type="reset" class="feedback__button">Очистить</button>
+                        <button type="submit" class="feedback__button">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; <span id="year"></span> Petals. All rights reserved.</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

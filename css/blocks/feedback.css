@@ -1,0 +1,98 @@
+.feedback {
+	padding: 70px 0;
+}
+
+.feedback__title {
+	font-size: 32px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.feedback__form {
+	display: grid;
+	gap: 30px;
+	font-family: 'Montserrat';
+}
+
+.feedback__item {
+	align-items: center;
+	display: grid;
+	grid-template-columns: minmax(150px, 1fr) 5fr;
+}
+
+.feedback__item:nth-child(3) .feedback__label {
+	padding-top: 18px;
+	align-self: flex-start;
+}
+
+.feedback__label {
+	font-size: 18px;
+}
+
+.feedback__input,
+.feedback__textarea {
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	min-height: 4em;
+}
+
+.feedback__textarea {
+	resize: vertical;
+}
+
+.feedback__buttons {
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 30px;
+}
+
+.feedback__button {
+	transition: all 0.3s ease-in-out, scale 0.01s ease-in-out;
+}
+
+.feedback__button[type='reset'] {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	padding: 20px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	max-width: 150px;
+}
+
+.feedback__button[type='submit'] {
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	padding: 20px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	max-width: 200px;
+}
+
+.feedback__button[type='reset']:hover {
+	background-color: black;
+	color: white;
+}
+
+.feedback__button[type='submit']:hover {
+	background-color: white;
+	color: black;
+	border-color: black;
+}
+
+.feedback__button:active {
+	scale: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+	.feedback__item {
+		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
